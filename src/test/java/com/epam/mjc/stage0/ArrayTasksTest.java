@@ -156,7 +156,7 @@ public class ArrayTasksTest {
     }
 
     private static Stream<Arguments> getOnlyPositiveNumbersTestProvider() {
-        return getIntArraysStream(6, 1000, 5000)
+        return getIntArraysStream(6, 10, 50)
                 .map(arr -> Arguments.of(arr, Arrays.stream(arr).filter(i -> i > 0).toArray()));
     }
 
